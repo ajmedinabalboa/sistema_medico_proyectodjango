@@ -13,28 +13,32 @@ Este es un proyecto básico de sistema de administración médica desarrollado c
 
 ## Instalación
 
-## 1. Clonar este repositorio:
+1. Clonar este repositorio:
    ```bash
    git clone https://github.com/ajmedinabalboa/sistema_medico.git
    cd sistema_medico
 
-## 2. Crear un entorno virtual y actívalo:
+2. Crear un entorno virtual y actívalo:
     ```bash
     python -m venv venv
     venv\Scripts\activate
 
-## 3. Instalar las dependencias:
+3. Instalar las dependencias:
    ```bash
    pip install -r requirements.txt
 
-## 4. Realiza las migraciones:
+4. Realiza las migraciones:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
 
-## 5. Crea un superusuario:
+5. Crear un superusuario:
    ```bash
    python manage.py createsuperuser
+
+6. Inicia el servidor:
+   ```bash
+      python manage.py runserver
 
 ## Funcionalidades
 
