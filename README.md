@@ -27,7 +27,7 @@ Este es un proyecto básico de sistema de administración médica desarrollado c
    ```bash
    pip install -r requirements.txt
 
-4. Realiza las migraciones:
+4. Realizar las migraciones:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
@@ -36,7 +36,7 @@ Este es un proyecto básico de sistema de administración médica desarrollado c
    ```bash
    python manage.py createsuperuser
 
-6. Inicia el servidor:
+6. Iniciar el servidor:
    ```bash
       python manage.py runserver
 
