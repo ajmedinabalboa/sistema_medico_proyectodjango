@@ -13,9 +13,37 @@ Este es un proyecto básico de sistema de administración médica desarrollado c
 
 ## Instalación
 
-1. Clona este repositorio:
+## 1. Clonar este repositorio:
    ```bash
    git clone https://github.com/ajmedinabalboa/sistema_medico.git
    cd sistema_medico
 
-   
+## 2. Crear un entorno virtual y actívalo:
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+
+## 3. Instalar las dependencias:
+   ```bash
+   pip install -r requirements.txt
+
+## 4. Realiza las migraciones:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+
+## 5. Crea un superusuario:
+   ```bash
+   python manage.py createsuperuser
+
+## Funcionalidades
+
+Gestión de pacientes, médicos, citas y historiales médicos.
+API REST para interactuar con el sistema:
+CRUD de pacientes, médicos y citas.
+Consulta personalizada de pacientes adultos.
+Endpoints Principales
+api/pacientes/ - Gestión de pacientes.
+api/medicos/ - Gestión de médicos.
+api/citas/ - Gestión de citas.
+api/adultos/ - Consulta personalizada de pacientes adultos.
